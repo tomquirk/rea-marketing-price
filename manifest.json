@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Value Display Extension",
+    "version": "1.0",
+    "description": "Extracts and displays marketing_price_range from the page HTML.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.realestate.com.au/*", "*://realestate.com.au/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
